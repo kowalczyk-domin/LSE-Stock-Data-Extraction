@@ -1,1 +1,1 @@
-# LSE---Stock-Data-Extraction
+# LSE-Stock-Data-Extraction
