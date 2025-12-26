@@ -56,6 +56,54 @@ This makes the automation suitable both as a **production-grade cloud automation
 
 ---
 
+## UiPath Studio Specification
+
+The automation was developed using **UiPath Studio** with the **REFramework** architecture to ensure consistency, maintainability, and robustness of execution.
+
+### Development Environment
+
+- **UiPath Studio:** StudioX / Studio (Cloud-compatible version)
+- **Framework:** REFramework
+- **Execution Type:** Unattended (primary), Attended (optional via UiPath Assistant)
+- **Target Runtime:** UiPath Robot / Cloud Robot
+- **Browser Automation:** Modern UI Automation (Edge)
+
+### Architectural Components
+
+- **Dispatcher**
+  - Responsible for preparing and distributing workload
+  - Reads input data and creates Queue Items
+  - Supports multiple input sources via configurable logic (Switch / Case)
+
+- **Performer**
+  - Processes individual Queue Items
+  - Retrieves stock data from the London Stock Exchange website
+  - Aggregates and persists results
+
+### Orchestrator Integration
+
+- **Queues**  
+  Used for scalable and independent transaction processing
+
+- **Storage Buckets**  
+  Used for centralized input and output file management
+
+- **Assets / Config.xlsx**  
+  All environment-specific values are externalized and configurable
+
+### Design Principles
+
+- Configuration-driven execution  
+- Stateless transaction processing  
+- Clear separation of responsibilities  
+- Deterministic cleanup of resources  
+- Cloud-ready and environment-agnostic design
+
+---
+
+This setup ensures that the solution can be reliably deployed, monitored, and scaled in both cloud and local execution scenarios.
+
+
 ## Summary
 
 The solution provides a robust and scalable way to automate the acquisition of stock market data, eliminating manual effort while ensuring consistency, reliability, and adaptability to different execution environments.
