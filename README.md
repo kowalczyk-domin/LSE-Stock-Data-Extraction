@@ -62,11 +62,16 @@ The automation was developed using **UiPath Studio** with the **REFramework** ar
 
 ### Development Environment
 
-- **UiPath Studio:** StudioX / Studio (Cloud-compatible version)
-- **Framework:** REFramework
-- **Execution Type:** Unattended (primary), Attended (optional via UiPath Assistant)
-- **Target Runtime:** UiPath Robot / Cloud Robot
-- **Browser Automation:** Modern UI Automation (Edge)
+- **UiPath Studio:** 2025.0.172 STS  
+- **License Type:** Community License  
+- **Installation Type:** Per-user installation  
+- **Profile:** Automation Developer  
+- **Framework:** REFramework  
+- **Execution Type:**  
+  - Unattended (primary – cloud-oriented execution)  
+  - Attended (optional – via UiPath Assistant)  
+- **Target Runtime:** UiPath Robot / UiPath Orchestrator  
+- **Browser Automation:** Modern UI Automation (eg. Microsoft Edge/Editable in Config.xslx)
 
 ### Architectural Components
 
